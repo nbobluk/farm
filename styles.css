@@ -57,6 +57,7 @@ table {
 /* --------------------GLOBAL STYLES (mobile first/small) ----------------*/
 h1 {
 	font-size: 2.5em;
+	color: #ffffff;
 }
 
 h2 {
@@ -78,11 +79,113 @@ p {
 header {
 	background-color: #06A816;
 }
+header p{
+	color: #ffffff;
+	font-style:italic;
+}
+
+nav li{
+	list-style:none;
+}
+
+
+nav a{
+	text-decoration:none;
+	background-color: #E75D02;
+	display:grid;
+	text-align:center;
+	color: #ffffff;
+	margin:10px;
+	padding: 0.75rem 1rem;
+}
+
+main{
+	display:grid;
+	align-content: center;
+}
+
+#fruits {
+	grid-column-start:1;
+	grid-column-end: 2;
+}
+#vegetables {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+#contacts {
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color:  #06A816;
+}
+#hours {
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color:  #06A816;
+}	
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media screen and (max-width:834px) {
+	nav ul {
+		display:grid;
+		grid-template-columns: 1fr;
+		width: 200px;
+	}
+	main {
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	#fruits {
+	
+		grid-column-start: 1;
+    	grid-column-end: 3;
+	}
+	#vegetables {
+		
+		grid-column-start: 1;
+    	grid-column-end: 3;
+	}
+
+}
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
-
+@media screen and (max-width:1280px){
+	nav ul {
+		display:grid;
+		grid-template-columns: 1fr;
+		width: 200px;
+	}
+	main {
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	#fruits {
+		grid-column-start: 1;
+    	grid-column-end: 4;
+	}
+	#vegetables {
+		grid-column-start: 1;
+    	grid-column-end: 4;
+	}
+}
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
-
+@media screen and (max-width:1440px){
+	nav ul {
+		display:grid;
+		grid-template-columns: 1fr;
+		width: 200px;
+	}
+	main {
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	#fruits {
+		
+		grid-column-start: 1;
+    	grid-column-end: 2;
+	}
+	#vegetables {
+		
+		grid-column-start: 1;
+    	grid-column-end: 2;
+	}
+}
