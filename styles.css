@@ -74,6 +74,11 @@ h1, h2, h3 {
 p {
 	font-family: Habibi;
 }
+
+header {
+	background-color: #06A816;
+}
+
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
