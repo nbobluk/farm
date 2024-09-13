@@ -48,6 +48,8 @@ table {
 
 /* -------------------- ROOT VARIABLES ---------------------------------- */
 :root {
+	font-family: "Habibi", serif;
+    font-size: 1.25em;
     --green: #06A816;
     --orange: #E75D02;
     --black: #000000;
@@ -123,7 +125,7 @@ main{
 }	
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
-@media screen and (max-width:834px) {
+@media screen and (min-width:834px) {
 	nav ul {
 		display:grid;
 		grid-template-columns: 1fr;
@@ -147,7 +149,7 @@ main{
 }
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
-@media screen and (max-width:1280px){
+@media screen and (min-width:1280px){
 	nav ul {
 		display:grid;
 		grid-template-columns: 1fr;
@@ -168,7 +170,7 @@ main{
 }
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
-@media screen and (max-width:1440px){
+@media screen and (min-width:1440px){
 	nav ul {
 		display:grid;
 		grid-template-columns: 1fr;
