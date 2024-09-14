@@ -57,17 +57,29 @@ table {
 }
 
 /* --------------------GLOBAL STYLES (mobile first/small) ----------------*/
+
+body {
+	min-width: 428px;
+}
+
 h1 {
 	font-size: 2.5em;
 	color: #ffffff;
+	text-align:center;
 }
 
 h2 {
 	font-size: 1.75em;
 }
 
+h3{
+	margin-top: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
 h3,text {
 	font-size: 1.25em;
+	text-align:center;
 }
 
 h1, h2, h3 {
@@ -78,18 +90,28 @@ p {
 	font-family: Habibi;
 }
 
+p, h2 {
+	margin:10px;
+}
+
 header {
 	background-color: #06A816;
 }
+
 header p{
 	color: #ffffff;
 	font-style:italic;
+	text-align:center;
+	padding-bottom: 0.5rem;
+}
+
+nav{
+	padding-top:1rem;
 }
 
 nav li{
 	list-style:none;
 }
-
 
 nav a{
 	text-decoration:none;
@@ -97,8 +119,8 @@ nav a{
 	display:grid;
 	text-align:center;
 	color: #ffffff;
-	margin:10px;
-	padding: 0.75rem 1rem;
+	margin:1rem 4rem;
+	padding: 0.5rem 1rem;
 }
 
 main{
@@ -106,88 +128,150 @@ main{
 	align-content: center;
 }
 
+figure {
+	text-align: center;
+}
+
+figcaption{
+	position:relative;
+	bottom: 190px;
+	color: #ffffff;
+	background-color:  #000000;
+	opacity: 60%;
+	margin:1rem 8rem;
+	padding: 0.5rem 1rem;
+}
+
 #fruits {
 	grid-column-start:1;
 	grid-column-end: 2;
 }
+
 #vegetables {
 	grid-column-start: 1;
 	grid-column-end: 2;
 }
 
+footer {
+	background-color:  #06A816;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 1rem;
+}
+
 #contacts {
 	grid-template-columns: 1fr 1fr 1fr;
-	background-color:  #06A816;
 }
+
 #hours {
 	grid-template-columns: 1fr 1fr 1fr;
-	background-color:  #06A816;
 }	
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 @media screen and (min-width:834px) {
+
+	body{
+		min-width: 834px;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		padding: 0.5rem;
+	}
+
 	nav ul {
 		display:grid;
-		grid-template-columns: 1fr;
-		width: 200px;
+		grid-template-columns: 1fr 1fr;
+		text-align:center;
 	}
+
 	main {
 		display:grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
-	#fruits {
-	
-		grid-column-start: 1;
-    	grid-column-end: 3;
+
+	#fruitsforsale {
+		display: grid;
+		grid-template-columns:1fr 1fr;
+		grid-column-start: 2;
+    	grid-column-end:2;
 	}
-	#vegetables {
-		
-		grid-column-start: 1;
-    	grid-column-end: 3;
+
+	#vegsforsale {
+		display: grid;
+		grid-template-columns:1fr 1fr;
+		grid-column-start: 2;
+    	grid-column-end:2;
 	}
 
 }
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 @media screen and (min-width:1280px){
+
+	body{
+		min-width: 1280px;
+	}
+
 	nav ul {
 		display:grid;
 		grid-template-columns: 1fr;
 		width: 200px;
 	}
+
 	main {
 		display:grid;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-	#fruits {
-		grid-column-start: 1;
-    	grid-column-end: 4;
+
+	#fruitsforsale {
+		display: grid;
+		grid-template-columns:1fr 1fr 1fr;
+		grid-column-start: 2;
+    	grid-column-end:2;
 	}
-	#vegetables {
-		grid-column-start: 1;
-    	grid-column-end: 4;
+
+	#vegsforsale {
+		display: grid;
+		grid-template-columns:1fr 1fr 1fr;
+		grid-column-start: 2;
+    	grid-column-end:2;
 	}
 }
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
 @media screen and (min-width:1440px){
+
+	body{
+		min-width: 1440px;
+	}
+
 	nav ul {
 		display:grid;
 		grid-template-columns: 1fr;
 		width: 200px;
 	}
+
 	main {
 		display:grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
-	#fruits {
-		
-		grid-column-start: 1;
-    	grid-column-end: 2;
+	#fruitsforsale {
+		display: grid;
+		grid-template-columns:1fr 1fr 1fr 1fr;
+		grid-column-start: 2;
+    	grid-column-end:2;
 	}
-	#vegetables {
-		
-		grid-column-start: 1;
-    	grid-column-end: 2;
+
+	#vegsforsale {
+		display: grid;
+		grid-template-columns:1fr 1fr 1fr 1fr;
+		grid-column-start: 2;
+    	grid-column-end:2;
 	}
+
+
 }
